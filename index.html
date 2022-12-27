@@ -20,7 +20,7 @@
                 <li class="header_item">
                     <img src="./assets/img/logo.png" alt="">
                 </li>
-                <li class="header_item">
+                <li class="header_item list">
                     <a href="">Khám phá</a>
                     <i class="fas fa-caret-down"></i>
                     <ul class="header_item_list">
@@ -29,7 +29,7 @@
                         <li><a href="">Lãng mạn</a></li>
                     </ul>
                 </li>
-                <li class="header_item">
+                <li class="header_item list">
                     <a href="">Cộng đồng</a>
                     <i class="fas fa-caret-down"></i>
                     <ul class="header_item_list">
@@ -45,7 +45,7 @@
             </ul>
             <ul class="header_list">
                 <li class="header_item login">Đăng nhập</li>
-                <li class="header_item">
+                <li class="header_item list">
                     <a href="">Tiếng việt</a>
                     <i class="fas fa-caret-down"></i>
                     <ul class="header_item_list">
@@ -128,7 +128,7 @@
         </div>
 
         <div id="link">
-            <a href="" class="link_description_author"><u>Tìm hiểu thêm về những gì chúng tôi làm cho các tác giả →</u></a>
+            <a href="#" class="link_description_author"><u>Tìm hiểu thêm về những gì chúng tôi làm cho các tác giả →</u></a>
         </div>
 
         <div id="wapper_activity">
@@ -208,7 +208,7 @@
                     <p class="slide_content_title">Working with Wattpad Studios is like a dream. Not only do they care about your success, but also staying true to your vision.</p>
                     <p class="slide_content_author">- KARA BARBIERI (@PANDEAN)</p>
                     <p class="slide_content_description">Kara Barbieri is a twenty-two year old author with a love for the weird and mystic. Her debut novel, WHITE STAG, will be published by Wednesday Books/Macmillan in January 2019.</p>
-                    <a href=""><button>Start Reading</button></a>
+                    <a href="#"><button>Start Reading</button></a>
                 </div>
             </div>
 
@@ -299,8 +299,8 @@
             <h3>Mang theo Wattpad Với Bạn</h3>
             <p>Đọc và viết bất cứ mọi nơi, ngay cả khi offline.</p>
             <div class="button">
-                <button><a href="">Bắt đầu đọc</a></button>
-                <button><a href="">Bắt đầu viết</a></button>
+                <button><a href="#">Bắt đầu đọc</a></button>
+                <button><a href="#">Bắt đầu viết</a></button>
             </div>
             <img src="./assets/img/footer-devices.png" alt="" class="img_device">
         </div>
@@ -327,6 +327,12 @@
         </div>
     </div>
 
+    <div id="go_to_top">
+        <button class="btn_go_to_top">
+            <i class="fa-solid fa-circle-up"></i>
+        </button>
+    </div>
+
     <div id="modal">
         <div class="modal_overlay">
             <div class="form_login">
@@ -334,13 +340,13 @@
                 <h3 class="title">Đăng nhập vào Wattpad</h3>
                 <div class="method_auto">
                     <button class="facebook">
-                        <a href="">
+                        <a href="https://www.facebook.com/v2.4/dialog/oauth?app_id=2582347323&cbt=1672112368119&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f397f92b4d0e4%26domain%3Dwww.wattpad.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.wattpad.com%252Ff1ad9783a0443%26relation%3Dopener&client_id=2582347323&display=popup&domain=www.wattpad.com&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.wattpad.com%2F&locale=en_US&logger_id=ff42debfe8e7a8&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1230458e08f964%26domain%3Dwww.wattpad.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.wattpad.com%252Ff1ad9783a0443%26relation%3Dopener%26frame%3Dfac0482c19de74&response_type=token%2Csigned_request%2Cgraph_domain&scope=%5B%22email%22%2C%22user_birthday%22%5D&sdk=joey&version=v2.4">
                             <i class="fa-brands fa-facebook"></i>
                             <p>Đăng nhập qua Facebook</p>
                         </a>
                     </button>
                     <button class="google">
-                        <a href="">
+                        <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=permission%20id_token&scope=profile%20openid%20email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuser.birthday.read&openid.realm&redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.wattpad.com%3Fid%3Dauth27641&client_id=819350800788-s42oc45ge5shd8hkimbj2broh7l6j7h6.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.wattpad.com&gsiwebsdk=2&service=lso&o2v=1&flowName=GeneralOAuthFlow">
                             <i class="fa-brands fa-google"></i>
                             <p>Đăng nhập qua Google</p>
                         </a>
@@ -358,6 +364,27 @@
                     <a href="#">Quên mật khẩu?</a>
                     <p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
                 </div>
+            </div>
+
+            <div class="form_input_login">
+                <i class="close fa-solid fa-xmark"></i>
+                <h3 class="title">Đăng nhập vào Wattpad</h3>
+                <div class="input_username">
+                    <p>Tên đăng nhập hoặc Email</p>
+                    <input type="text">
+                </div>
+                <div class="input_password">
+                    <p>Mật khẩu</p>
+                    <input class="password" type="password"> 
+                    <button class="on_off_pass"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <button class="login">Đăng nhập</button>
+                <a class="get_password" href="">Quên mật khẩu?</a>
+                <div class="back">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <p>Trở lại các mục đăng nhập</p>
+                </div>
+                <p>Chưa có tài khoản? <a href="">Đăng ký</a></p>
             </div>
         </div>
     </div>
