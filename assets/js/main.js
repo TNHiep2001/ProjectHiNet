@@ -44,6 +44,7 @@ setInterval(() => {
 }, 5000)
 
 
+//------------------------------------------------------------------------------
 //form login
 const formModal = $('#modal')
 const iconCLose = $$('.close')
@@ -51,10 +52,14 @@ const iconLogin = $('.header_item.login')
 const login = $('.form_login .method_default .basic')
 const formLogin = $('.form_login')
 const formInputLogin = $('.form_input_login')
+const formRegister  = $('.form_register')
 const back = $('.form_input_login .back')
 const viewPass = $('.on_off_pass')
 const inputPass = $('.input_password .password')
 const btnGoToTop = $('.btn_go_to_top')
+const registerFormIPLogin = $('.form_input_login .register')
+const registerFormLogin = $('.form_login .register')
+const nodeLogin = $('.form_register .node_login')
 
 //show form login
 iconLogin.onclick = () => {
@@ -70,6 +75,8 @@ iconCLose.forEach( close => {
             formLogin.classList.remove('active')
         }else if(formInputLogin.classList.contains('active')){
             formInputLogin.classList.remove('active')
+        }else if(formRegister.classList.contains('active')){
+            formRegister.classList.remove('active')
         }
     
     }
@@ -79,6 +86,11 @@ iconCLose.forEach( close => {
 login.onclick = () => {
     formLogin.classList.remove('active')
     formInputLogin.classList.add('active')
+}
+
+nodeLogin.onclick = () => {
+    formRegister.classList.remove('active')
+    formLogin.classList.add('active')
 }
 
 //back to option login
@@ -96,6 +108,17 @@ viewPass.onclick = () => {
     }
 }
 
+// open register
+registerFormLogin.onclick = () => {
+    formLogin.classList.remove('active')
+    formRegister.classList.add('active')
+}
+
+registerFormIPLogin.onclick = () => {
+    formInputLogin.classList.remove('active')
+    formRegister.classList.add('active')
+}
+
 
 // Go to top
 window.onscroll = () => {
@@ -107,5 +130,6 @@ window.onscroll = () => {
 }
 
 btnGoToTop.onclick = () => {
-    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0
 }
+

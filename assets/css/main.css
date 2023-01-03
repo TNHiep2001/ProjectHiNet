@@ -835,6 +835,7 @@ html{
     display: block;
 }
 
+#modal .form_register .close,
 #modal .form_input_login .close,
 #modal .form_login .close {
     padding: 20px;
@@ -842,6 +843,7 @@ html{
     cursor: pointer;
 }
 
+#modal .form_register .title,
 #modal .form_input_login .title,
 #modal .form_login .title {
     text-align: center;
@@ -852,6 +854,7 @@ html{
     font-size: 24px;
 }
 
+#modal .form_register .method_auto,
 #modal .form_login .method_auto {
     display: flex;
     flex-direction: column;
@@ -859,6 +862,7 @@ html{
     align-items: center;
 }
 
+#modal .form_register button,
 #modal .form_login button {
     height: 44px;
     font-size: 16px;
@@ -871,14 +875,17 @@ html{
     margin: 6px 0;
 }
 
+#modal .form_register .facebook,
 #modal .form_login .facebook {
     background-color: #3b5998;
 }
 
+#modal .form_register .google,
 #modal .form_login .google {
     border: 1px solid #222;
 }
 
+#modal .form_register button a,
 #modal .form_login button a {
     display: flex;
     justify-content: center;
@@ -886,26 +893,31 @@ html{
     text-decoration: none;
 }
 
+#modal .form_register .facebook a,
 #modal .form_login .facebook a {
     color: #fff;
     padding: 10px 0;
 }
 
+#modal .form_register .google a,
 #modal .form_login .google a {
     color: #222;
     padding: 10px 0;
 
 }
 
+#modal .form_register button a i,
 #modal .form_login button a i {
     margin: 0 12px;
     font-size: 24px;
 }
 
+#modal .form_register button a p,
 #modal .form_login button a p {
     margin: 0 12px;
 }
 
+#modal .form_register .method_other,
 #modal .form_login .method_other {
     display: flex;
     justify-content: center;
@@ -913,20 +925,23 @@ html{
     padding: 20px 0;
 }
 
+#modal .form_register .method_other .border,
 #modal .form_login .method_other .border {
     background-color: #948f8b;
-    height: 1px;
+    height: 0.5px;
     width: 28%;
     font-family: 'Chivo Mono', monospace;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+#modal .form_register .method_other p,
 #modal .form_login .method_other p {
     margin: 0 12px;
     font-family: 'Chivo Mono', monospace;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+#modal .form_register .method_default,
 #modal .form_login .method_default {
     display: flex;
     flex-direction: column;
@@ -934,6 +949,7 @@ html{
     justify-content: center;
 }
 
+#modal .form_register .method_default .basic,
 #modal .form_login .method_default .basic {
     width: 280px;
     background-color: #222;
@@ -1070,4 +1086,50 @@ html{
 #modal .form_input_login p a {
     color: #222;
     font-weight: 600;
+}
+
+
+/* Register */
+#modal .form_register {
+    display: none;
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    height: 520px;
+    border-radius: 6px;
+}
+#modal .form_register.active {
+    display: block;
+}
+
+#modal .form_register .description {
+    margin: 0 60px 24px;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    color: #948f8b;
+    font-weight: 400;
+    text-align: center;
+}
+
+#modal .form_register p.login {
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 12px 0 16px;
+}
+
+#modal .form_register p.check a,
+#modal .form_register p.login a {
+    color: #222;
+    font-weight: 600;
+}
+
+#modal .form_register p.check {
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 54px;
 }
