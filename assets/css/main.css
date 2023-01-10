@@ -773,9 +773,6 @@ html{
 }
 
 /* Go to top */
-#go_to_top {
-    
-}
 
 #go_to_top button {
     display: none;
@@ -1132,4 +1129,170 @@ html{
     font-size: 14px;
     text-align: center;
     margin: 0 54px;
+}
+
+/* Responsive */
+
+
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #main {
+        width: 100%;
+    }
+    
+    #header {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: -80px;
+    }
+
+    #header .header_list {
+        width: 100%;
+        display: flex;
+        padding: 4px 0;
+    }
+
+    #header .header_list .header_item {
+        width: 120px;
+    }
+
+    #header .header_list .header_item button {
+        display: none;
+    }
+
+    #header .header_list .header_item input {
+        width: 120px;
+        /* font-size: 12px; */
+    }
+
+    #header .header_list .header_item img {
+        display: none;
+    }
+
+    /* content */
+
+    #content_introduce {
+        width: 100%;
+    }
+
+    #content_introduce .content_introduce_img img {
+        width: 90%;
+    }
+
+    #content_introduce button {
+        min-width: 100px;
+    }
+
+    #content_introduce button a {
+        padding: 0 20px;
+    }
+
+    /* view content */
+    #view {
+        width: 100%;
+    }
+
+    #view_content {
+        width: 100%;
+    }
+
+    #view_category_list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #view_category_studio, #view_category_book {
+        padding: 70px 0;
+    }
+
+    #view_category_book .view_category_book_description {
+        padding: 0;
+    }
+
+    /* activity */
+    #activity {
+        width: 100%;
+    }
+
+    /* slide */
+    #slide {
+        width: 100%;
+    }
+    #slide.active {
+        width: 100%;
+    }
+
+    #slide .slide_img {
+        width: 200%;
+    }
+
+    #slide .slide_img img {
+        width: 100%;
+    }
+
+    #slide .slide_content a button {
+        position: unset;
+    }
+
+    .slide_content_tabs {
+        display: none;
+    }
+    
+    .btn_next_slide {
+        display: none;
+    }
+
+    /* list find */
+    #list_find .list_find_content {
+        width: 100%;
+    }
+
+    #list_find .list_find_items {
+        width: 100%;
+    }
+
+    #list_find .list_find_item_img img {
+        width: 90%;
+    }
+
+    #list_find .list_find_item_img::after {
+        content: "";
+        width: 195px;
+        height: 193px;
+        background-color: #00b2b2;
+        position: absolute;
+        top: 24px;
+        left: 22px;
+        display: block;
+        z-index: -1;
+    }
+
+    /* Padding */
+    #footer {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}   
+
+/* Mobie */
+@media (max-width: 739px) {
+
 }
